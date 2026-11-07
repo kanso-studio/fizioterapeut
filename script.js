@@ -128,4 +128,47 @@
          currentSlide++;
          showSlide(currentSlide);
      }, 6000);
+
+     // --- Hamburger meni (mobilni) ---
+     const navToggle = document.getElementById('navToggle');
+     const navMenu = document.getElementById('navMenu');
+     const navOverlay = document.getElementById('navOverlay');
+
+     const openMenu = () => {
+         navMenu.classList.add('active');
+         navOverlay.classList.add('active');
+         navToggle.classList.add('active');
+         navToggle.setAttribute('aria-expanded', 'true');
+         document.body.style.overflow = 'hidden';
+     };
+
+     const closeMenu = () => {
+         navMenu.classList.remove('active');
+         navOverlay.classList.remove('active');
+         navToggle.classList.remove('active');
+         navToggle.setAttribute('aria-expanded', 'false');
+         document.body.style.overflow = '';
+     };
+
+     navToggle.addEventListener('click', () => {
+         if (navMenu.classList.contains('active')) closeMenu();
+         else openMenu();
+     });
+
+     navOverlay.addEventListener('click', closeMenu);
+
+     // Zatvori meni klikom na bilo koji link unutar njega
+     navMenu.querySelectorAll('a').forEach(link => {
+         link.addEventListener('click', closeMenu);
+     });
+
+     // Zatvori na Escape
+     document.addEventListener('keydown', (e) => {
+         if (e.key === 'Escape' && navMenu.classList.contains('active')) closeMenu();
+     });
+
+     // Automatski zatvori meni ako se prozor proširi na desktop
+     window.addEventListener('resize', () => {
+         if (window.innerWidth > 768 && navMenu.classList.contains('active')) closeMenu();
+     });
  });

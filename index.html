@@ -40,20 +40,27 @@
             <a href="#" class="logo">
                 <i class="fas fa-spa"></i> FIZIO VITA
             </a>
-            <nav class="nav-menu">
+            <nav class="nav-menu" id="navMenu">
                 <a href="#">Početna</a>
                 <a href="#o-nama">O nama</a>
                 <a href="#usluge">Usluge</a>
                 <a href="#tim">Tim</a>
                 <a href="#paketi">Paketi</a>
                 <a href="#">Kontakt</a>
+                <a href="#" class="btn btn-primary nav-menu-cta">Zakaži termin</a>
             </nav>
             <div class="header-actions">
-                <a href="#" class="btn btn-outline" style="color: var(--text-dark); border-color: var(--border-color);"><i class="fas fa-search"></i></a>
-                <a href="#" class="btn btn-primary">Zakaži termin</a>
+                <a href="#" class="btn btn-outline btn-search" style="color: var(--text-dark); border-color: var(--border-color);"><i class="fas fa-search"></i></a>
+                <a href="#" class="btn btn-primary btn-header-cta">Zakaži termin</a>
+                <button class="nav-toggle" id="navToggle" aria-label="Otvori meni" aria-expanded="false" aria-controls="navMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>
+    <div class="nav-overlay" id="navOverlay"></div>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -104,6 +111,10 @@
             </div>
         </div>
     </section>
+    <!-- samo za mobilni -->
+    <a href="#" class="btn btn-primary" style="display:none; width:calc(100% - 40px); margin:20px auto; justify-content:center;" class="mobile-hero-cta">
+        Zakaži termin <i class="fas fa-arrow-right"></i>
+    </a>
 
     <!-- Stats Section -->
     <section class="stats">

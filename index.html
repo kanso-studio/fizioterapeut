@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizio Vita | Centar za fizioterapiju i rehabilitaciju</title>
+    <meta name="description" content="Fizio Vita - Terapeutska masaža i rehabilitacija. Vratite pokret i kvalitet života uz stručni tim.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-info">
+                <span><i class="fas fa-map-marker-alt"></i> Bulevar Oslobođenja 42, Beograd</span>
+                <span><i class="fas fa-clock"></i> Pon - Pet: 8:00 - 20:00 | Sub: 9:00 - 14:00</span>
+                <span><i class="fas fa-envelope"></i> info@fiziovita.rs</span>
+            </div>
+            <div class="top-bar-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <i class="fas fa-spa"></i> FIZIO VITA
+            </a>
+            <nav class="nav-menu">
+                <a href="#">Početna</a>
+                <a href="#o-nama">O nama</a>
+                <a href="#usluge">Usluge</a>
+                <a href="#tim">Tim</a>
+                <a href="#paketi">Paketi</a>
+                <a href="#">Kontakt</a>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="btn btn-outline" style="color: var(--text-dark); border-color: var(--border-color);"><i class="fas fa-search"></i></a>
+                <a href="#" class="btn btn-primary">Zakaži termin</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content reveal">
+                <span>NAJBOLJE MESTO ZA REHABILITACIJU</span>
+                <h1>Terapeutska masaža koja leči vaše telo i donosi blagostanje</h1>
+                <p>Podstičemo vas da ne čekate operaciju kako biste započeli fizikalnu terapiju ili rehabilitaciju. Istraživanja potvrđuju da je rana rehabilitacija ključna za postizanje uspešnih rezultata i skraćivanje vremena oporavka.</p>
+                <div class="hero-buttons">
+                    <a href="#paketi" class="btn btn-primary">Započni oporavak <i class="fas fa-arrow-right"></i></a>
+                    <a href="#o-nama" class="btn btn-outline" id="btnOurStory">Naša priča <i class="fas fa-play"></i></a>
+                </div>
+            </div>
+
+            <div class="booking-form reveal" style="transition-delay: 0.2s;">
+                <h3>Zakažite termin</h3>
+                <p>Podstičemo vas da ne čekate operaciju kako biste započeli fizikalnu terapiju.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Vaše ime" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="tel" placeholder="Telefon" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email adresa" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select>
+                            <option value="" disabled selected>Izaberite uslugu</option>
+                            <option value="rehabilitacija">Rehabilitacija</option>
+                            <option value="masaza">Terapeutska masaža</option>
+                            <option value="kineziterapija">Kineziterapija</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="time" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-light">Zakaži online</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item reveal">
+                <div class="stat-icon"><i class="far fa-heart"></i></div>
+                <div class="stat-text">
+                    <h4>99%</h4>
+                    <p>Zadovoljstvo klijenata</p>
+                </div>
+            </div>
+            <div class="stat-item reveal" style="transition-delay: 0.1s;">
+                <div class="stat-icon"><i class="fas fa-award"></i></div>
+                <div class="stat-text">
+                    <h4>16</h4>
+                    <p>Nagrada za kvalitet</p>
+                </div>
+            </div>
+            <div class="stat-item reveal" style="transition-delay: 0.2s;">
+                <div class="stat-icon"><i class="fas fa-user-md"></i></div>
+                <div class="stat-text">
+                    <h4>28</h4>
+                    <p>Visoko specijalizovanih terapeuta</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Quote Section -->
+    <section class="about-section" id="o-nama">
+        <div class="container">
+            <div class="section-title reveal">
+                <span>NAŠA PRIČA</span>
+                <h2>Verujemo da pokret menja život</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fizioterapeut pomaže pacijentu">
+                </div>
+                <div class="about-text reveal" style="transition-delay: 0.2s;">
+                    <p class="quote-text">Podstičemo vas da ne čekate operaciju kako biste započeli fizikalnu terapiju ili rehabilitaciju. Istraživanja potvrđuju da je rana rehabilitacija ključna za postizanje uspešnih rezultata i skraćivanje vremena oporavka.</p>
+                    <p>Fizio Vita je nastao 2009. godine sa jednostavnom idejom — da svaki pacijent zaslužuje vreme, pažnju i plan terapije napravljen baš za njega. Ne verujemo u „isti tretman za sve", već u pažljivu procenu, merljiv napredak i terapiju koja se prilagođava vašem telu.</p>
+                    <span class="signature">Dr. Milan Jovanović</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Section (Video) -->
+    <section class="banner-section">
+        <div class="banner-content reveal">
+            <h2>Briga za sve pacijente, u svakom trenutku. Postanite deo promene sada.</h2>
+            <p>Fizio Vita je medicinska specijalnost usmerena na obnavljanje funkcija i smanjenje bolova kod pacijenata sa oštećenjima koja proizlaze iz povreda ili bolesti koje utiču na mišićno-koštani ili nervni sistem.</p>
+            <div>
+                <a href="#usluge" class="btn btn-light">Naše usluge <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="banner-video reveal" style="transition-delay: 0.2s;">
+            <video autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                <source src="https://videos.pexels.com/video-files/4536642/4536642-hd_1920_1080_25fps.mp4" type="video/mp4">
+                Vaš pregledač ne podržava video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="usluge">
+        <div class="container">
+            <div class="section-title reveal">
+                <span>NAŠE USLUGE</span>
+                <h2>Pružamo vrhunsku i stručnu terapiju<br>prilagođenu vašim potrebama</h2>
+            </div>
+
+            <!-- TABS -->
+            <div class="services-tabs reveal">
+                <button class="tab-btn active" data-target="tab-rehabilitacija"><span class="num">1</span> Program rehabilitacije</button>
+                <button class="tab-btn" data-target="tab-hronicna"><span class="num">2</span> Hronična bolna stanja</button>
+                <button class="tab-btn" data-target="tab-neuroloska"><span class="num">3</span> Neurološka stanja</button>
+            </div>
+
+            <!-- TAB 1: Rehabilitacija -->
+            <div class="services-grid active" id="tab-rehabilitacija">
+                <div class="service-card grid-span-1 reveal">
+                    <img src="https://images.unsplash.com/photo-1519824145371-296894a0daa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Rehabilitacija">
+                </div>
+                <div class="service-card content-light grid-span-1 reveal" style="transition-delay: 0.1s;" data-title="Terapija rehabilitacije" data-img="https://images.unsplash.com/photo-1519824145371-296894a0daa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" data-desc="Naš program rehabilitacije je dizajniran za pacijente koji se oporavljaju od povreda, operacija ili dugotrajnih bolesti. Kombinacijom kineziterapije, manualne terapije i savremenih aparata, ubrzavamo proces zarastanja i vraćamo funkcionalnost mišića i zglobova. Svaki plan se pravi individualno, na osnovu detaljne procene.">
+                    <div class="icon"><i class="fas fa-bone"></i></div>
+                    <h3>Terapija rehabilitacije</h3>
+                    <p>Za naše pacijente sa oštećenjima koja proizlaze iz povreda ili bolesti koje utiču na nervni sistem.</p>
+                    <span class="service-link trigger-modal">Saznaj više <i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="service-card grid-span-1 reveal" style="transition-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1598555763574-dca77e10427e?q=80&w=1197&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Akupunktura">
+                </div>
+                <div class="service-card content-dark grid-span-1 reveal" style="transition-delay: 0.3s;" data-title="Terapija akupunkture" data-img="https://images.unsplash.com/photo-1584362917165-526a968579e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" data-desc="Akupunktura je drevna tehnika koja se koristi za ublažavanje hroničnog bola, smanjenje upala i poboljšanje cirkulacije. Fine igle postavljene na specifične tačke na telu stimulišu nervni sistem da oslobodi endorfine, prirodne analgetike. Ova metoda je izuzetno efikasna kao dodatak fizioterapiji.">
+                    <div class="icon"><i class="fas fa-hand-holding-heart"></i></div>
+                    <h3>Terapija akupunkture</h3>
+                    <p>Za pacijente sa oštećenjima koja proizlaze iz povreda ili bolesti koje utiču na nervni sistem.</p>
+                    <span class="service-link trigger-modal">Saznaj više <i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="service-card content-dark grid-span-1 reveal" data-title="Ublažavanje bolova u leđima" data-img="https://images.unsplash.com/photo-1600334129128-685c5582fd35?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" data-desc="Bol u leđima je jedan od najčešćih razloga za posetu fizioterapeutu. Naš pristup uključuje manualnu terapiju za opuštanje grčeva, mobilizaciju kičme i set vežbi za jačanje core mišića. Cilj je ne samo otkloniti trenutni bol, već i sprečiti njegov povratak edukacijom o pravilnom držanju tela.">
+                    <div class="icon"><i class="fas fa-spine"></i></div>
+                    <h3>Ublažavanje bolova u leđima</h3>
+                    <p>Za pacijente sa oštećenjima koja proizlaze iz povreda ili bolesti koje utiču na nervni sistem.</p>
+                    <span class="service-link trigger-modal">Saznaj više <i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="service-card grid-span-1 reveal" style="transition-delay: 0.1s;">
+                    <img src="https://images.unsplash.com/photo-1598555748505-ccca0d9b9f7b?q=80&w=1497&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Masaža leđa">
+                </div>
+                <div class="service-card content-light grid-span-1 reveal" style="transition-delay: 0.2s;" data-title="Terapija vakuum kupama" data-img="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" data-desc="Vakuum terapija (kupovanje) koristi negativan pritisak za poboljšanje cirkulacije krvi, uklanjanje toksina i opuštanje dubokih slojeva mišića. Izuzetno je efikasna kod bolova u leđima, ukočenosti vrata i sportskih povreda. Tretman je bezbolan i ostavlja osećaj olakšanja.">
+                    <div class="icon"><i class="fas fa-first-aid"></i></div>
+                    <h3>Terapija vakuum kupama</h3>
+                    <p>Za pacijente sa oštećenjima koja proizlaze iz povreda ili bolesti koje utiču na nervni sistem.</p>
+                    <span class="service-link trigger-modal">Saznaj više <i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="service-card grid-span-1 reveal" style="transition-delay: 0.3s;">
+                    <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Vakuum kape">
+                </div>
+            </div>
+
+            <!-- TAB 2: Hronična bolna stanja -->
+            <div class="services-grid" id="tab-hronicna">
+                <div class="service-card grid-span-1">
+                    <img src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Hronični bol">
+                </div>
+                <div class="service-card content-light grid-span-1" data-title="Tretman lumbalnog sindroma" data-img="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" data-desc="Lumbalni sindrom obuhvata bolove u donjem delu leđa, često praćene širenjem bola u nogu (išijas). Tretman uključuje dekompresiju kičme, manualne tehnike i ciljane vežbe stabilizacije. Fokus je na smanjenju pritiska na nervne korene i jačanju mišića donjeg dela leđa.">
+                    <div class="icon"><i class="fas fa-user-injured"></i></div>
+                    <h3>Tretman lumbalnog sindroma</h3>
+                    <p>Specijalizovani program za ublažavanje bola u donjem delu leđa i išijasa.</p>
+                    <span class="service-link trigger-modal">Saznaj više <i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="service-card grid-span-1">
+                    <img src="https://images.unsplash.com/photo-1519824145371-296894a0daa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Vrat">
+                </div>
+                <div class="service-card content-dark grid-span-1" data-title="Cervikalni sindrom" data-img="https://images.unsplash.com/photo-1519824145371-296894a0daa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" data-desc="Bol u vratu i ukočenost, često izazvani dugotrajnim sedenjem ili stresom. Naša terapija kombinuje trigger point masažu, mobilizaciju vratne kičme i istezanje. Učimo pacijente ergonomskim navikama kako bi se sprečilo ponovno javljanje tegoba.">
+                    <div class="icon"><i class="fas fa-head-side-cough"></i></div>
+                    <h3>Cervikalni sindrom</h3>
+                    <p>Ublažavanje bolova i ukočenosti u vratu izazvanih stresom ili lošim držanjem.</p>
+                    <span class="service-link trigger-modal">Saznaj više <i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="service-card content-dark grid-span-1" data-title="Tenziona glavobolja" data-img="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" data-desc="Glavobolje koje nastaju usled napetosti mišića vrata i ramena. Terapija se sastoji od opuštanja mišića lica, vrata i gornjeg dela leđa, uz tehnike relaksacije. Često je dovoljno nekoliko tretmana da se prekine začarani krug bola i napetosti.">
+                    <div class="icon"><i class="fas fa-brain"></i></div>
+                    <h3>Tenziona glavobolja</h3>
+                    <p>Terapija usmerena na opuštanje mišića vrata i ramena koji izazivaju glavobolju.</p>
+                    <span class="service-link trigger-modal">Saznaj više <i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="service-card grid-span-1">
+                    <img src="https://images.unsplash.com/photo-1630226040750-d934f017f0e4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Terapija">
+                </div>
+                <div class="service-card content-light grid-span-1" data-title="Fibromialgija" data-img="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" data-desc="Fibromialgija je hronično stanje praćeno rasprostranjenim bolom i umorom. Naš pristup je nežan: lagana masaža, hidroterapija i vežbe u toploj vodi pomažu u smanjenju bola. Edukujemo pacijente o ritmu aktivnosti i tehnikama upravljanja stresom.">
+                    <div class="icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Fibromialgija</h3>
+                    <p>Nežni tretmani i vežbe za upravljanje hroničnim bolom i umorom.</p>
+                    <span class="service-link trigger-modal">Saznaj više <i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="service-card grid-span-1">
+                    <img src="https://images.unsplash.com/photo-1648638810948-f3bf2cccdde9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Zglobovi">
+                </div>
+            </div>
+
+            <!-- TAB 3: Neurološka stanja -->
+            <div class="services-grid" id="tab-neuroloska">
+                <div class="service-card grid-span-1">
+                    <img src="https://images.unsplash.com/photo-1699523229208-44963df7a087?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Neurologija">
+                </div>
+                <div class="service-card content-light grid-span-1" data-title="Rehabilitacija posle moždanog udara" data-img="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" data-desc="Oporavak nakon moždanog udara zahteva strpljenje i stručan rad. Naš tim radi na ponovnom uspostavljanju motornih funkcija, poboljšanju ravnoteže i koordinacije, kao i na obuci pacijenta i porodice za svakodnevne aktivnosti. Koristimo tehnike neurofacilitacije.">
+                    <div class="icon"><i class="fas fa-walking"></i></div>
+                    <h3>Rehabilitacija posle moždanog udara</h3>
+                    <p>Program za vraćanje motornih funkcija, ravnoteže i samostalnosti.</p>
+                    <span class="service-link trigger-modal">Saznaj više <i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="service-card grid-span-1">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Terapija">
+                </div>
+                <div class="service-card content-dark grid-span-1" data-title="Parkinsonova bolest" data-img="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80" data-desc="Fizioterapija kod Parkinsonove bolesti fokusira se na održavanje pokretljivosti, poboljšanje hoda i sprečavanje padova. Vežbe uključuju strategije za prevazilaženje ukočenosti, vežbe ravnoteže i istezanje. Redovna terapija značajno poboljšava kvalitet života.">
+                    <div class="icon"><i class="fas fa-dna"></i></div>
+                    <h3>Parkinsonova bolest</h3>
+                    <p>Održavanje pokretljivosti i poboljšanje hoda kroz specijalizovane vežbe.</p>
+                    <span class="service-link trigger-modal">Saznaj više <i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="service-card content-dark grid-span-1" data-title="Multipla skleroza" data-img="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" data-desc="Kod multiple skleroze, cilj fizioterapije je očuvanje snage, fleksibilnosti i energetske efikasnosti. Prilagođavamo vežbe trenutnom stanju pacijenta, koristeći tehnike hlađenja i upravljanja umorom. Fokus je na funkcionalnim pokretima za svakodnevni život.">
+                    <div class="icon"><i class="fas fa-heartbeat"></i></div>
+                    <h3>Multipla skleroza</h3>
+                    <p>Očuvanje snage i fleksibilnosti uz upravljanje umorom.</p>
+                    <span class="service-link trigger-modal">Saznaj više <i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="service-card grid-span-1">
+                    <img src="https://images.unsplash.com/photo-1758691462071-757bca955439?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Masaža">
+                </div>
+                <div class="service-card content-light grid-span-1" data-title="Neuropatija" data-img="https://images.unsplash.com/photo-1600334129128-685c5582fd35?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" data-desc="Neuropatski bol (pečenje, trnjenje) često je posledica dijabetesa ili povrede nerava. Terapija uključuje desenzitizaciju, laganu mobilizaciju i elektroterapiju koja pomaže u smanjenju neprijatnih senzacija. Edukujemo pacijente o nezi stopala i prevenciji povreda.">
+                    <div class="icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Neuropatija</h3>
+                    <p>Ublažavanje pečenja i trnjenja uzrokovanih oštećenjem nerava.</p>
+                    <span class="service-link trigger-modal">Saznaj više <i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="service-card grid-span-1">
+                    <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Relaksacija">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="testimonial-slider">
+                <div class="testimonial-item active">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Pacijent" class="testimonial-avatar">
+                    <p class="testimonial-text">"Preživela sam tešku povredu kičmene moždine. Fizio Vita tim mi je pomogao da se oporavim od povrede. Imam veliko poštovanje prema njima i visoko ih preporučujem! Želim im puno sreće u daljem radu."</p>
+                    <h4 class="testimonial-author">Marija Petrović</h4>
+                    <p class="testimonial-role">Pacijentkinja</p>
+                </div>
+                <div class="testimonial-item">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Pacijent" class="testimonial-avatar">
+                    <p class="testimonial-text">"Nakon operacije kolena, mislio sam da se više nikada neću baviti sportom. Zahvaljujući stručnom timu i individualnom pristupu, vratio sam se na teren brže nego što sam se nadao."</p>
+                    <h4 class="testimonial-author">Nikola Jovanović</h4>
+                    <p class="testimonial-role">Sportista</p>
+                </div>
+
+                <div class="slider-nav">
+                    <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section" id="tim">
+        <div class="container">
+            <div class="section-title reveal">
+                <span>ČLANOVI TIMA</span>
+                <h2>Upoznajte naše divne terapeute<br>koji brinu o pacijentima</h2>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-member reveal">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Terapeut" class="member-img">
+                    <h4>Jelena Marković</h4>
+                    <p>Fizioterapeut</p>
+                </div>
+                <div class="team-member reveal" style="transition-delay: 0.1s;">
+                    <img src="https://images.unsplash.com/photo-1649751361457-01d3a696c7e6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Terapeut" class="member-img">
+                    <h4>Marko Petrović</h4>
+                    <p>Fizioterapeut</p>
+                </div>
+                <div class="team-member reveal" style="transition-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Terapeut" class="member-img">
+                    <h4>Ana Stojanović</h4>
+                    <p>Fizioterapeut</p>
+                </div>
+                <div class="team-member reveal" style="transition-delay: 0.3s;">
+                    <img src="https://images.unsplash.com/photo-1706353399656-210cca727a33?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Terapeut" class="member-img">
+                    <h4>Nikola Ilić</h4>
+                    <p>Fizioterapeut</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="package-section" id="paketi">
+        <div class="container">
+            <div class="section-title reveal">
+                <span>PAKETI TERAPIJA</span>
+                <h2>Izaberite paket koji odgovara<br>vašim potrebama</h2>
+            </div>
+
+            <div class="package-grid">
+                <!-- Paket 1 -->
+                <article class="package-card reveal" data-title="Start paket" data-img="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" data-desc="Start paket je idealan za one koji prvi put dolaze u naš centar ili imaju blaže tegobe. Uključuje detaljnu fizioterapeutsku procenu, 3 tretmana po vašem izboru (npr. manualna terapija, kineziterapija ili masaža) i personalizovani plan vežbi za kuću. Cilj je da osetite olakšanje i steknete naviku pravilnog kretanja.">
+                    <div class="package-img">
+                        <img src="https://images.unsplash.com/photo-1648638810954-281a6439675b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Start paket">
+                        <div class="price-badge">od 3.500 RSD</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Start paket</h3>
+                        <p>Idealno za prvo iskustvo — procena + 3 tretmana po izboru, uz plan vežbi za kuću.</p>
+                        <span class="service-link trigger-modal">Saznaj više <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </article>
+
+                <!-- Paket 2 -->
+                <article class="package-card reveal" style="transition-delay: 0.1s;" data-title="Standard paket" data-img="https://images.unsplash.com/photo-1645005513751-e22717a66ae6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" data-desc="Standard paket je najčešći izbor za pacijente sa hroničnim tegobama ili onima koji se oporavljaju od povrede. Obuhvata 5 tretmana tokom kojih se napredak meri nedeljno. Terapeut prilagođava intenzitet i tehnike u skladu sa vašim reakcijama, uz stalnu komunikaciju i korekciju plana.">
+                    <div class="package-img">
+                        <img src="https://images.unsplash.com/photo-1645005513751-e22717a66ae6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Standard paket">
+                        <div class="price-badge">od 6.900 RSD</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Standard paket</h3>
+                        <p>5 tretmana sa napretkom koji se meri nedeljno — najčešći izbor za hronične tegobe.</p>
+                        <span class="service-link trigger-modal">Saznaj više <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </article>
+
+                <!-- Paket 3 -->
+                <article class="package-card reveal" style="transition-delay: 0.2s;" data-title="Premium paket" data-img="https://images.unsplash.com/photo-1706777227772-629b1cdb8a9f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" data-desc="Premium paket je namenjen pacijentima kojima je potreban sveobuhvatan i dugotrajan oporavak (npr. nakon operacije ili teže povrede). Uključuje 10 tretmana, personalizovani program vežbi, kao i kontrolni pregled nakon 30 dana kako bi se osiguralo da su rezultati dugoročni i da nema vraćanja bola.">
+                    <div class="package-img">
+                        <img src="https://images.unsplash.com/photo-1706777227772-629b1cdb8a9f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Premium paket">
+                        <div class="price-badge">od 12.900 RSD</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Premium paket</h3>
+                        <p>10 tretmana + personalizovani program vežbi i kontrola nakon 30 dana.</p>
+                        <span class="service-link trigger-modal">Saznaj više <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners-section">
+        <div class="container">
+            <div class="partners-grid reveal">
+                <div style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 600; display: flex; align-items: center; gap: 5px;"><i class="fas fa-leaf"></i> Avasan</div>
+                <div style="font-family: cursive; font-size: 1.5rem;">Aura</div>
+                <div style="font-family: var(--font-body); font-size: 1.2rem; font-weight: 300; letter-spacing: 2px;"><i class="fas fa-circle"></i> purezen</div>
+                <div style="font-family: var(--font-heading); font-size: 1.5rem; font-style: italic; font-weight: 700;">vezlor</div>
+                <div style="font-family: var(--font-body); font-size: 1.4rem; font-weight: 700; letter-spacing: 1px;">ZRND <i class="fas fa-hexagon" style="font-size: 0.8em;"></i></div>
+                <div style="font-family: var(--font-body); font-size: 1rem; font-weight: 500; text-transform: uppercase;"><i class="fas fa-cube"></i> Vita Studio</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+
+
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-spa"></i> FIZIO VITA
+                    </div>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Bulevar Oslobođenja 42, Beograd, Srbija</li>
+                        <li><i class="fas fa-clock"></i> Pon - Pet: 8:00 - 20:00<br>Sub: 9:00 - 14:00</li>
+                        <li><i class="fas fa-envelope"></i> info@fiziovita.rs</li>
+                        <li><i class="fas fa-phone-alt"></i> +381 11 123 4567</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Naše usluge</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Rehabilitacija</a></li>
+                        <li><a href="#">Terapija bola</a></li>
+                        <li><a href="#">Akupunktura</a></li>
+                        <li><a href="#">Terapija vakuum kupama</a></li>
+                        <li><a href="#">Ublažavanje bolova u leđima</a></li>
+                        <li><a href="#">Neurološka nega</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Linkovi</h4>
+                    <ul class="footer-links">
+                        <li><a href="#o-nama">O nama</a></li>
+                        <li><a href="#">Zakaži termin</a></li>
+                        <li><a href="#">Kontaktirajte nas</a></li>
+                        <li><a href="#usluge">Naše usluge</a></li>
+                        <li><a href="#">Cenovnik</a></li>
+                        <li><a href="#">Lokacija</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>Copyright &copy; 2025 Fizio Vita. Sva prava zadržana.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL WINDOW (Services & Packages) -->
+    <div class="modal-overlay" id="serviceModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal"><i class="fas fa-times"></i></button>
+            <img src="" alt="Terapija" class="modal-img" id="modalImg">
+            <div class="modal-body">
+                <h3 id="modalTitle">Naslov</h3>
+                <p id="modalDesc">Opis...</p>
+                <div class="modal-details">
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Individualni pristup</li>
+                        <li><i class="fas fa-check-circle"></i> Procena stručnjaka pre tretmana</li>
+                        <li><i class="fas fa-clock"></i> Trajanje: 45-60 minuta</li>
+                    </ul>
+                </div>
+                <a href="#" class="btn btn-primary" style="width: 100%;">Zakaži ovaj tretman</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- VIDEO MODAL (Naša priča) -->
+    <div class="modal-overlay" id="videoModal">
+        <div class="modal-content" style="max-width: 900px; padding: 0;">
+            <button class="modal-close" id="closeVideoModal" style="z-index: 10;"><i class="fas fa-times"></i></button>
+            <div style="aspect-ratio: 16/9; background: #000;">
+                <video id="storyVideo" controls playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                    <source src="https://www.pexels.com/download/video/6111017/" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

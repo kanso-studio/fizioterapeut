@@ -220,7 +220,7 @@ img, video { max-width: 100%; display: block; }
 
 /* --- Testimonial Section --- */
 .testimonial-section { padding: 100px 0; background-color: var(--white); text-align: center; position: relative; }
-.testimonial-section::before { content: 'Testimonial'; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-family: var(--font-heading); font-size: 10rem; color: #f9f9f9; z-index: 0; white-space: nowrap; }
+.testimonial-section::before { content: 'T'; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-family: var(--font-heading); font-size: 10rem; color: #f9f9f9; z-index: 0; white-space: nowrap; }
 .testimonial-slider { max-width: 800px; margin: 0 auto; position: relative; z-index: 1; }
 .testimonial-item { display: none; animation: fadeIn 0.5s ease; }
 .testimonial-item.active { display: block; }
